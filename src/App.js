@@ -1,12 +1,12 @@
 import './App.css'
 import Navbar from './components/Navbar';
-import LatestPhotos from './pages/LatestPhotos';
+import { Outlet } from 'react-router-dom';
 
 function App() {
 
   return <>
     <Navbar />
-    <LatestPhotos/>
+    <Outlet />
   </>
 }
 
