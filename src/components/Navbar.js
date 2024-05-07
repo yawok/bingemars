@@ -1,14 +1,24 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 export default function Navbar() {
+	const navPaths = ['latest-photos', 'curiosity', 'perseverance', 'opportunity']
+
 	return (
 		<nav>
 			<h1>Binge Mars</h1>
 			<section>
-				<Link to={'/latest-photos'} >Latest Photos</Link>
-				<Link to={'/curiosity'}>Curiosity</Link>
-				<Link to={'/perseverance'}>Perseverance</Link>
-				<Link to={'/opportunity'}>Opportunity</Link>
+				{
+					navPaths.map((path) => (
+						<NavLink
+							key={path}
+							to={`/${path}`}
+							className={({ isActive }) => {
+								return isActive ? 'selected-nav' : '';
+							}} >
+							{path.toUpperCase().replace('-', ' ')}
+						</NavLink>
+					))
+				}
 			</section>
 		</nav>
 	)

@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+}
 .App {
   text-align: center;
 }
@@ -11,4 +18,32 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fcfbfb;
+  padding: 0 20px;
+}
+
+nav > h1 {
+  font-size: 36px;
+}
+
+nav > section > a {
+  font-size: 24px;
+  color: #000;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav > section > a:hover {
+  text-decoration: underline;
+}
+
+.selected-nav {
+  text-decoration: underline;
+  font-weight: bold;
 }
