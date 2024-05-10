@@ -47,3 +47,26 @@ nav > section > a:hover {
   text-decoration: underline;
   font-weight: bold;
 }
+
+.latest-photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0 0 0;
+}
+
+.rover-choice-button {
+  margin: 0 5px;
+  justify-content: space-around;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #fff;
+  border: solid 2px #000;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.selected-rover {
+  color: #fff;
+  background-color: #000;
+}

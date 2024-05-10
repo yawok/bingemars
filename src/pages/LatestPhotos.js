@@ -8,6 +8,7 @@ export default function LatestPhotos() {
 	const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0)
 	const [roverName, setRoverName] = useState('Curiosity')
 	const [isLoading, setIsLoading] = useState(true)
+	const rovers = ["Curiosity", "Perseverance"]
 
 	let url = `https://mars-photos.herokuapp.com/api/v1/rovers/${roverName}/latest_photos`
 
@@ -34,9 +35,20 @@ export default function LatestPhotos() {
 	}
 
 	return (
-		<>
-			<RoverChoiceButton roverName={'Curiosity'} setRoverName={setRoverName} />
-			<RoverChoiceButton roverName={'Perseverance'} setRoverName={setRoverName} />
+		<div className="latest-photos">
+			<div>
+				{
+					rovers.map((rover) => (
+						<RoverChoiceButton 
+							key={rover}
+							roverName={rover}
+							setRoverName={setRoverName}
+							className={roverName === rover ? 'selected-rover' : ''}>
+								{rover.toUpperCase()}
+							</RoverChoiceButton>
+					))
+				}
+			</div>
 			<ImageViewer
 				photo={photos[currentPhotoIndex]}
 				currentIndex={currentPhotoIndex}
@@ -44,6 +56,6 @@ export default function LatestPhotos() {
 				handleBack={() => setCurrentPhotoIndex(currentPhotoIndex - 1)}
 				handleNext={() => setCurrentPhotoIndex(currentPhotoIndex + 1)}
 			/>
-		</>
+		</div>
 	)
 }
