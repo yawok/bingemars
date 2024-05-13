@@ -95,3 +95,9 @@ img {
   width: 150px;
   border: none;
 }
+
+.loading-spinner {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

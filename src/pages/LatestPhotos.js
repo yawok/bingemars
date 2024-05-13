@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ImageViewer from "../components/ImageViewer";
 import Loading from "../components/Loading";
 import RoverChoiceButton from "../components/RoverChoiceButton";
+import { DNA, ThreeCircles } from "react-loader-spinner";
 
 export default function LatestPhotos() {
 	const [photos, setPhotos] = useState([])
@@ -30,32 +31,41 @@ export default function LatestPhotos() {
 	}, [url])
 
 
-	if (isLoading) {
-		return <Loading />
-	}
-
 	return (
-		<div className="latest-photos">
-			<div>
-				{
-					rovers.map((rover) => (
-						<RoverChoiceButton 
-							key={rover}
-							roverName={rover}
-							setRoverName={setRoverName}
-							className={roverName === rover ? 'selected-rover' : ''}>
-								{rover.toUpperCase()}
-							</RoverChoiceButton>
-					))
-				}
-			</div>
-			<ImageViewer
-				photo={photos[currentPhotoIndex]}
-				currentIndex={currentPhotoIndex}
-				photosLength={photos.length}
-				handleBack={() => setCurrentPhotoIndex(currentPhotoIndex - 1)}
-				handleNext={() => setCurrentPhotoIndex(currentPhotoIndex + 1)}
-			/>
+		<div>
+			{isLoading ? <ThreeCircles
+				visible={true}
+				height="100"
+				width="100"
+				color="#000"
+				ariaLabel="three-circles-loading"
+				wrapperStyle={{}}
+				wrapperClass="loading-spinner"
+			/> :
+
+				<div className="latest-photos">
+					<div>
+						{
+							rovers.map((rover) => (
+								<RoverChoiceButton
+									key={rover}
+									roverName={rover}
+									setRoverName={setRoverName}
+									className={roverName === rover ? 'selected-rover' : ''}>
+									{rover.toUpperCase()}
+								</RoverChoiceButton>
+							))
+						}
+					</div>
+					<ImageViewer
+						photo={photos[currentPhotoIndex]}
+						currentIndex={currentPhotoIndex}
+						photosLength={photos.length}
+						handleBack={() => setCurrentPhotoIndex(currentPhotoIndex - 1)}
+						handleNext={() => setCurrentPhotoIndex(currentPhotoIndex + 1)}
+					/>
+				</div>
+			}
 		</div>
 	)
 }
