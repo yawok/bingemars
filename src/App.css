@@ -70,3 +70,28 @@ nav > section > a:hover {
   color: #fff;
   background-color: #000;
 }
+
+.image-viewer {
+  display: flex;
+  justify-self: space-between;
+  align-items: center;
+  margin: 50px;
+  
+}
+
+img {
+  width: 90vh;
+  height: 90vh;
+  object-fit: cover;
+  border: solid 1px #a0a0a0;
+  border-radius: 5px;
+  margin: 0 50px;
+}
+
+.image-control-btn {
+  background-color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  width: 150px;
+  border: none;
+}
