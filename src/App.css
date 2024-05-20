@@ -76,7 +76,6 @@ nav > section > a:hover {
   justify-self: space-between;
   align-items: center;
   margin: 50px;
-  
 }
 
 img {
@@ -96,7 +95,8 @@ img {
   border: none;
 }
 
-.loading-spinner {
+.center-element {
+  text-align: center;
   justify-content: center;
   align-items: center;
   height: 100vh;
