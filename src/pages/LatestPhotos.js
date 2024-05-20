@@ -43,7 +43,7 @@ export default function LatestPhotos() {
 				width="100"
 				color="#000"
 				ariaLabel="three-circles-loading"
-				wrapperClass="center-element"
+				wrapperClass="temp-element center-element"
 			/> : fetchError ? <LoadingError /> :
 				<div className="latest-photos">
 					<div>
