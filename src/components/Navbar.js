@@ -1,11 +1,17 @@
 import { NavLink } from "react-router-dom"
+import { ReactComponent as MarsIcon } from "../assets/mars-icon(b).svg"
 
 export default function Navbar() {
 	const navPaths = ['Latest-photos', 'Curiosity', 'Perseverance', 'Opportunity', 'Spirit']
 
 	return (
 		<nav>
-			<h1>Binge Mars</h1>
+			<NavLink
+				key={"home"}
+				to={'/'}
+				className="title">
+				<MarsIcon height='80px' width="80px" /><h1>Binge Mars</h1>
+			</NavLink>
 			<section>
 				{
 					navPaths.map((path) => (

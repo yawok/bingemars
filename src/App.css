@@ -29,7 +29,14 @@ nav {
   padding: 0 20px;
 }
 
-nav > h1 {
+.title {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+
+nav  h1 {
   font-size: 36px;
 }
 
