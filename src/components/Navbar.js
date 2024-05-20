@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom"
 
 export default function Navbar() {
-	const navPaths = ['Latest-photos', 'Curiosity', 'Perseverance', 'Ppportunity']
+	const navPaths = ['Latest-photos', 'Curiosity', 'Perseverance', 'Opportunity']
 
 	return (
 		<nav>
