@@ -9,6 +9,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ErrorPage from './pages/ErrorPage';
 import LatestPhotos from './pages/LatestPhotos';
+import ComingSoon from './pages/ComingSoon';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,15 @@ const router = createBrowserRouter([
       {
         path: 'latest-photos/',
         element: <LatestPhotos />
+      }, {
+        path: 'curiosity',
+        element: <ComingSoon />
+      }, {
+        path: 'perseverance',
+        element: <ComingSoon />
+      }, {
+        path: 'opportunity',
+        element: <ComingSoon />
       }
     ]
   }
