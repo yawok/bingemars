@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom"
 import { ReactComponent as MarsIcon } from "../assets/mars-icon(b).svg"
 
 export default function Navbar() {
-	const navPaths = ['Latest-photos', 'Curiosity', 'Perseverance', 'Opportunity', 'Spirit']
+	const navPaths = ['Latest-photos', 'Perseverance', 'Curiosity', 'Opportunity', 'Spirit']
 
 	return (
 		<nav>
