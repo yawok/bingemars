@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import RoversPotrait from "../components/RoversPotraitSVG";
 import { Tooltip } from "react-tooltip";
 
@@ -7,13 +8,16 @@ export default function HomePage() {
 		<section className="center-element header-text">
 			<h1> Watch all the pictures from the</h1>
 			<h1 className="red-planet">Red Planet</h1>
+			<Link to={'/latest-photos'}>
+				<button className="rounded-btn">Watch Latest Photos</button>
+			</Link>
 		</section>
 		{
 			rovers.map((name, index) => (
 				<Tooltip anchorSelect={`.rover-svg${index}`} place="top">{name}</Tooltip>
 			)
-		)}
-		
-		<RoversPotrait className="rovers-potrait"/>
+			)}
+
+		<RoversPotrait className="rovers-potrait" />
 	</div>
 }

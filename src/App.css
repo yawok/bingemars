@@ -63,7 +63,7 @@ nav > section > a:hover {
   margin: 50px 0;
 }
 
-.rover-choice-button {
+.rounded-btn {
   margin: 0 5px;
   justify-content: space-around;
   font-size: 16px;
@@ -74,6 +74,10 @@ nav > section > a:hover {
   padding: 10px;
 }
 
+.rounded-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
 .selected-rover {
   color: #fff;
   background-color: #000;
@@ -125,7 +129,7 @@ img {
 
 .header-text {
   font-size:48px ;
-  margin: 100px 0 0 0;
+  margin: 40px 0 0 0;
 }
 
 .header-text h1 {
