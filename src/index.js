@@ -10,6 +10,7 @@ import reportWebVitals from './reportWebVitals';
 import ErrorPage from './pages/ErrorPage';
 import LatestPhotos from './pages/LatestPhotos';
 import ComingSoon from './pages/ComingSoon';
+import HomePage from './pages/Home';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,9 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
+        path: '',
+        element: <HomePage />,
+      }, {
         path: 'latest-photos/',
         element: <LatestPhotos />
       }, {
@@ -28,6 +32,9 @@ const router = createBrowserRouter([
         element: <ComingSoon />
       }, {
         path: 'opportunity',
+        element: <ComingSoon />
+      }, {
+        path: 'spirit',
         element: <ComingSoon />
       }
     ]
