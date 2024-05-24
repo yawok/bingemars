@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# [Bingemars](http://bingemars.netlify.app/)
+Explore the Red Planet through the lens of NASA's rovers! Binge Mars is a React app that fetches stunning photos from Mars using NASA's API. Currently, you can view the latest photos from the Curiosity and Perseverance rovers. More features are coming soon, including photos from different sols! Check it out at https://bingemars.netlify.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🚀 Features
 
-## Available Scripts
+- 📸 View the latest photos from Curiosity and Perseverance
+- 🌑 Upcoming: Browse photos from various sols (Martian days)
+- 🔗 Easy navigation with React Router
 
-In the project directory, you can run:
+## 🛠️ Installation
 
-### `npm start`
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/binge-mars.git
+    cd binge-mars
+    ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Start the development server:
+    ```bash
+    npm start
+    ```
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🖼️ Gallery
 
-### `npm run build`
+Here's a sneak peek of what you'll find:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Screenshots
+![Homepage](imgs/img1.png)
+![Latest photos](imgs/img2.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Latest Photos from Curiosity
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Curiosity Photo 1](https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04102/opgs/edr/ncam/NLB_761647924EDR_F1060660NCAM00354M_.JPG)
+![Curiosity Photo 2](https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/04102/opgs/edr/ncam/NLB_761648040EDR_F1060660NCAM00258M_.JPG)
 
-### `npm run eject`
+### Latest Photos from Perseverance
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Perseverance Photo 1](https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01158/ids/edr/browse/ncam/NLF_1158_0769745899_770ECM_N0523018NCAM02158_07_195J01_1200.jpg)
+![Perseverance Photo 2](https://mars.nasa.gov/mars2020-raw-images/pub/ods/surface/sol/01158/ids/edr/browse/ncam/NLF_1158_0769734565_159ECM_N0522824NCAM14157_04_195J01_1200.jpg)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🌌 Roadmap
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- [ ] Add photo browsing by sol
+- [ ] Improve mobile responsiveness
+- [ ] Add more rovers and photo filters
 
-## Learn More
+## 🧑‍🚀 Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contributions are welcome! Please open an issue or submit a pull request.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+Happy exploring!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
