@@ -11,8 +11,8 @@ Explore the Red Planet through the lens of NASA's rovers! Binge Mars is a React 
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/binge-mars.git
-    cd binge-mars
+    git clone https://github.com/yawok/bingemars.git
+    cd bingemars
     ```
 
 2. Install dependencies:
