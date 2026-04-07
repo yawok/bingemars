@@ -4,12 +4,15 @@ import { Tooltip } from "react-tooltip";
 
 const rovers = ["Sojourner", "Spirit", "Opportunity", "Curiosity", "Perseverance", "Ingenuity"]
 export default function HomePage() {
-	return <div className="">
+	return <div>
 		<section className="center-element header-text">
-			<h1> Watch all the pictures from the</h1>
+			<h1 data-test="header-text"> Watch all the pictures from the</h1>
 			<h1 className="red-planet">Red Planet</h1>
 			<Link to={'/latest-photos'}>
-				<button className="rounded-btn">Watch Latest Photos</button>
+				<button data-test="cta-button"
+					className="rounded-btn">
+					Watch Latest Photos
+				</button>
 			</Link>
 		</section>
 		{

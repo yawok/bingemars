@@ -12,6 +12,7 @@ const ROVER_PATHS = [
 
 const RoversPotrait = (props) => (
   <svg
+    data-test="rover-potraits-svg"
     width={1191}
     height={203}
     viewBox="0 0 1191 203"
